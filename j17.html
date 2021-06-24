@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+
+</head>
+<body>
+    <h3>printing the value from list of objects</h3>
+    <p> var cars = [
+        {type:"volvo",year:"2016"},
+        {type:"saab",year:"2001"},
+        {type:"BMW",year:"2016"}
+
+    ]</p>
+    <p>printing the value of yearin type saab</p>
+    <button onclick="myFunction()">click here</button>
+    <p id="first"></p>
+    <script>
+        var cars = [
+            {type:"volvo",year:"2016"},
+            {type:"saab",year:"2001"},
+            {type:"BMW",year:"2016"}
+
+        ]
+        function myFunction(){
+            document.getElementById("first").innerHTML = cars[1].year;
+        }
+    </script>
+</body>
+</html>

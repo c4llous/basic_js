@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js objects</title>
+</head>
+<body>
+    <h3>js objects</h3>
+    <p>click the button to print the properties of car</p>
+    <button onclick="myFunction()">type</button>
+    <button onclick="myFunction1()">color</button>
+    <button onclick="myFunction2()">model</button>
+    <p id="first"></p>
+    <script>
+        var car = {type:"lembo",color:"white",model:"hurican"}
+        function myFunction(){
+            document.getElementById("first").innerHTML = car.type;
+        }
+        function myFunction1(){
+            document.getElementById("first").innerHTML = car.color;
+        }
+        function myFunction2(){
+            document.getElementById("first").innerHTML = car.model;
+        }
+        
+    </script>
+
+</body>
+</html>

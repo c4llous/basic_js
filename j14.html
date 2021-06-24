@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js array properties</title>
+</head>
+<body>
+    <h3>js array properties</h3>
+    <h4>lenght property to print lenght</h4>
+    <p id="first"></p>
+    <h4>sort property to sort an array</h4>
+    <p id="second"></p>
+    <h4>pop property to remove elements</h4>
+    <p id="third"></p>
+    <h4>push property to add new element</h4>
+    <p id="fourth"></p>
+    <h4>shift property to remove first element</h4>
+    <P id="fifth"></P>
+    <h4>unshift property to add new elements  in the begining of the array</h4>
+    <p id="sixth"></p>
+    <h4>merge property to add to different arrays in one</h4>
+    <p id="seven"></p>
+    <h4>reverse property to reverse an array</h4>
+    <p id="eight"></p>
+    <h4>indexof property to show the index of specific element of an array</h4>
+    <p id="nine"></p>
+    <script>
+        var arr = ["ritesh","singh","first","second","third","fourth"];
+        document.getElementById("first").innerHTML = arr.length;
+        document.getElementById("second").innerHTML = arr.sort();
+        document.getElementById("third").innerHTML = arr.pop(2);
+        arr.push("new");
+        document.getElementById("fourth").innerHTML = arr;
+        arr.shift();
+        document.getElementById("fifth").innerHTML = arr;
+        arr.unshift("newelement","secondnew");
+        document.getElementById("sixth").innerHTML = arr;
+        var arr1 = ["arr1 element","arr1 element2"]; 
+        var arr2 = arr.concat(arr1);
+        document.getElementById("seven").innerHTML = arr2;
+        document.getElementById("eight").innerHTML = arr.reverse();
+        document.getElementById("nine").innerHTML = arr.indexOf("ritesh");
+
+
+
+    </script>
+    
+</body>
+</html>

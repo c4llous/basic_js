@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tax calculator</title>
+</head>
+<body>
+    <h3>JS TAX CALCULATOR</h3>
+    <script>
+        var salary = parseInt(prompt('ENTER THE SALARY'));
+        if(salary>10000){
+            let tax = salary*(40/100);
+            var totaltax = " TAX CALCULATED = " +tax;
+            document.writeln(totaltax);
+        }
+        else if(salary>7500){
+            let tax = salary*(30/100);
+            var totaltax = " TAX CALCULATED = " +tax;
+            document.writeln(totaltax);
+
+        }
+        else{
+            let tax = salary*(20/100);
+            var totaltax = " TAX CALCULATED = " +tax;
+            document.writeln(totaltax);
+        }
+    </script>
+</body>
+</html>

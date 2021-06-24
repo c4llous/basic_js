@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS calculator</title>
+
+</head>
+<body>
+    <h3>JS CALCULATOR</h3>
+    <p>THE result is 78</p>
+    <script>
+        const a1 = parseInt(prompt('ENTER FIRST NUMBER'));
+        const a2 = parseInt(prompt('ENTER SECOND NUMBER'));
+        var operator = parseInt(prompt('ENTER THE OPERATOR'));
+        switch(operator){
+            case '+': 
+                let sum = a1+a2;
+                document.write(sum); 
+                break;
+            case '-':
+                let sum = a1-a2;
+                document.write(sum);
+                break;        
+            case '*':
+                let sum = a1*a2;
+                document.write(sum);           
+                break;
+            case '/':
+                let sum = a1/a2;
+                document.write(sum);           
+                break;
+            default:
+                document.write("invalid operator!!!!!!");          
+        }
+    </script>
+    
+</body>
+</html>

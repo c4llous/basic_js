@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changin style with css</title>
+</head>
+<body>
+   <h3>changing color with js</h3>
+   <hr>
+   <h4 id="first">click the buttons to change the color</h4>
+   <button onclick="myFunction()">RED</button>
+   <button onclick="myFunction1()">BLUE</button>
+   <button onclick="myFunction2()">GREEN</button>
+
+   <script>
+       function myFunction(){
+           document.getElementById("first").style.color = "red";
+       }
+       function myFunction1(){
+           document.getElementById("first").style.color = "blue";
+       }
+       function myFunction2(){
+           document.getElementById("first").style.color = "green";
+       }
+   </script>
+</body>
+</html>

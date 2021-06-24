@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student grade calculator</title>
+</head>
+<body>
+    <h3>JS CODE TO CALCULATE GRADES FOR STUDENT</h3>
+    <script>
+        var a1 = parseInt(prompt('ENTER THE MARKS IN SUBJECT 1'));
+        var a2 = parseInt(prompt('ENTER THE MARKS  IN SUBJECT 2'));
+        var a3 = parseInt(prompt('ENTER THE MARKS  IN SUBJECT 3'));
+        var a4 = parseInt(prompt('ENTER THE MARKS  IN SUBJECT 4'));
+        var a5 = parseInt(prompt('ENTER THE MARKS  IN SUBJECT 5'));
+        per(a1,a2,a3,a4,a5);
+
+        function per(v1,v2,v3,v4,v5){
+            let sum = v1+ v2+v3+v4+v5;
+            let percent = (sum*100)/500;
+            if(percent>=75)
+            document.write("Congrats you,ve got 1st division");
+            else if(percent>50)
+            document.write("Good you,ve got 2nd division");
+            else if(percent>40)
+            document.write("keep it up you,ve got 3rd devison");
+            else
+            document.write("FAIL!!!!!")
+        }
+    </script>
+</body>
+</html>

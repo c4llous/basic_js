@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js arrays</title>
+</head>
+<body>
+    <H3>JS arrays </H3>
+    
+    <script>
+        var arr = ["ritesh","singh","first","second"];
+        document.write("\nUsing for loop")
+        document.write("<br>");
+        for(let i=0;i<arr.length;i++){
+            let result = " "+ arr[i];
+            document.write(result);
+        }
+        document.write("<br>");
+        document.write("\nUsing while loop");
+        document.write("<br>");
+        var a = 0;
+        while(a<arr.length){
+            let result = " "+ arr[a];
+            document.write(result);
+            a++;
+        }
+        document.write("<br>");
+        document.writeln("\nusing do while loop");
+        document.write("<br>");
+        a = 0;
+        do{
+            let result = " "+ arr[a];
+            document.write(result);
+            a++;
+        }while(a<arr.length);
+        document.write("<br>");
+        document.write("using for in loop");
+        document.write("<br>");
+        a = 0;
+        for (a in arr){
+            let result = " "+ arr[a];
+            document.write(result);
+        }
+        
+
+    </script>
+</body>
+</html>

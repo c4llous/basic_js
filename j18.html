@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js events
+
+    </title>
+</head>
+<body>
+    <h3>js events</h3>
+    <button onclick="myFunction()" onmouseover="myFunction1()" >click here</button>
+    
+    <p id="first"></p>
+    <script>
+    function myFunction(){
+        document.getElementById("first").innerHTML = "You clicked the button";
+    }
+    function myFunction1(){
+        document.getElementById("first").innerHTML ="you are going to click button";
+    }
+    </script>
+    
+</body>
+</html>

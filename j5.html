@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of first and last digit of number</title>
+</head>
+<body>
+    <h3>JS program to find sum of first and last digit of any number</h3>
+    <script>
+        const num = parseInt(prompt('ENTER THE NUMBER'));
+        document.write(sum(num));
+
+
+        function sum(num1){
+            let first;
+            let last;
+            // let temp;
+            last = num1%10;
+            while(num1>10){
+                num1  = num1/10;
+
+            }
+            first = parseInt(num1);
+            const sum = first+last;
+            var result = "THE result is " +sum;
+            return result;
+        }
+    </script>
+</body>
+</html>
